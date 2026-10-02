@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Relicário Cestas | Cestas afetivas e bolos em buttercream</title>
+  <meta name="description" content="Cestas afetivas e bolos em buttercream da Relicário Cestas, em Goiânia. Presenteie quem você ama: pedidos com antecedência pelo WhatsApp.">
+  <meta name="theme-color" content="#F6EFE7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F120E" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" href="assets/img/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <!-- Aplica o tema antes da renderização para evitar "flash" de tema errado -->
+  <script>
+    (function () {
+      document.documentElement.classList.remove('no-js');
+      try {
+        var saved = localStorage.getItem('relicario-theme');
+        var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = saved || (dark ? 'dark' : 'light');
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=31">
+</head>
+<body>
+
+  <!-- Ícones reutilizáveis (use com <svg><use href="#i-nome"/></svg>) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path fill="currentColor" d="M20.5 3.5C11 3 4.6 8.4 4 16.3c-.1 1.3 0 2.5.3 3.7.9-4.6 3.9-8.6 8.4-11-3.6 3-5.8 7-6.4 11.4 8.9-.6 14.6-6.8 14.2-16.9Z"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21s-7.5-4.6-9.6-9.3C.9 8.2 3 4.5 6.6 4.5c2.1 0 3.6 1.2 5.4 3.1 1.8-1.9 3.3-3.1 5.4-3.1 3.6 0 5.7 3.7 4.2 7.2C19.5 16.4 12 21 12 21z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="#inicio" aria-label="Relicário Cestas, página inicial">
+        <img class="brand__logo" src="assets/img/logo.webp" alt="" width="48" height="48">
+        <span class="brand__name">Relicário <em>Cestas</em></span>
+      </a>
+
+      <nav class="nav" id="menu" aria-label="Menu principal" data-nav>
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#inicio">Início</a></li>
+          <li><a class="nav__link" href="#destaques">Destaques</a></li>
+          <li><a class="nav__link" href="#vitrine">Catálogo</a></li>
+          <li><a class="nav__link" href="#depoimentos">Depoimentos</a></li>
+          <li><a class="nav__link" href="#contato">Contato</a></li>
+        </ul>
+        <a class="btn btn--whatsapp nav__cta" href="https://wa.me/556284585707" data-wa="Olá! Vim pelo site e gostaria de fazer um pedido." target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          Pedir pelo WhatsApp
+        </a>
+      </nav>
+
+      <div class="site-header__actions">
+        <button class="icon-btn" type="button" data-theme-toggle aria-label="Ativar tema escuro">
+          <svg class="icon icon--sun" aria-hidden="true"><use href="#i-sun"/></svg>
+          <svg class="icon icon--moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        </button>
+        <a class="btn btn--whatsapp btn--sm header-cta" href="https://wa.me/556284585707" data-wa="Olá! Vim pelo site e gostaria de fazer um pedido." target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          <span>Fazer pedido</span>
+        </a>
+        <button class="icon-btn nav-toggle" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu" data-nav-toggle>
+          <svg class="icon icon--open" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="icon icon--close" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <p class="eyebrow">Cestas afetivas &amp; bolos em buttercream</p>
+          <h1 class="hero__title" id="hero-title">Presenteie quem você <em>ama</em></h1>
+          <p class="hero__text">
+            Cestas afetivas montadas com carinho e bolos em buttercream para surpreender
+            em cada data especial. Faça seu pedido com antecedência, direto pelo WhatsApp.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="https://wa.me/556284585707" data-wa="Olá! Vim pelo site e gostaria de fazer um pedido." target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Fazer pedido
+            </a>
+            <a class="btn btn--outline" href="#vitrine">
+              Ver catálogo
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </div>
+          <ul class="hero__info" aria-label="Informações rápidas">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> <span>Pedidos com antecedência</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> <span>Atendimento exclusivo pelo WhatsApp</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__media reveal" style="--reveal-delay: 120ms">
+          <div class="hero__plate">
+            <!-- Banner principal (proporção 1:1; ideal 900×900 ou maior) -->
+            <img class="hero__img" src="assets/img/logo.webp"
+                 alt="Logo da Relicário Cestas" width="443" height="443" fetchpriority="high">
+          </div>
+          <svg class="deco deco--star deco--s1" aria-hidden="true"><use href="#i-leaf"/></svg>
+          <svg class="deco deco--star deco--s2" aria-hidden="true"><use href="#i-leaf"/></svg>
+          <svg class="deco deco--heart" aria-hidden="true"><use href="#i-heart"/></svg>
+          <span class="deco deco--crumbs" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DESTAQUES ============ -->
+    <section class="section" id="destaques" aria-labelledby="destaques-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2 class="section-title" id="destaques-title">Para presentear com amor</h2>
+          <p class="section-subtitle">Algumas das nossas cestas favoritas</p>
+        </header>
+
+        <div class="feature-grid">
+          <!-- Card reutilizável: .feature-card -->
+          <article class="feature-card reveal">
+            <div class="feature-card__media">
+              <img src="assets/img/produtos/cesta-dengo.webp" alt="Cesta de vime com bentô cake, balão personalizado e foto polaroide" width="600" height="800" loading="lazy">
+            </div>
+            <h3 class="feature-card__title">Cesta Dengo</h3>
+            <p class="feature-card__text">Café da manhã completo com bentô cake, balão e foto personalizados.</p>
+            <details class="items items--feature">
+              <summary>O que vem <span class="items__count">(14 itens)</span></summary>
+              <ul><li>Bentô cake personalizado</li><li>Pão caseiro</li><li>Frios</li><li>Pão de queijo</li><li>Croissant</li><li>Porção de frutas</li><li>Suco natural</li><li>Cápsula de cappuccino artesanal</li><li>Bolo caseiro</li><li>Biscoitinhos amanteigados</li><li>Brigadeiros</li><li>Cartãozinho personalizado</li><li>Balão personalizado</li><li>Foto polaroide</li></ul>
+            </details>
+            <a class="btn btn--primary btn--sm" href="https://wa.me/556284585707" data-wa="Olá! Gostaria de encomendar: Cesta Dengo." target="_blank" rel="noopener">Encomendar<span class="sr-only"> cesta Dengo</span></a>
+          </article>
+
+          <article class="feature-card reveal" style="--reveal-delay: 100ms">
+            <div class="feature-card__media">
+              <img src="assets/img/produtos/bandeja-amor.webp" alt="Bandeja de café da manhã com balão de coração e tirinha de fotos" width="600" height="800" loading="lazy">
+            </div>
+            <h3 class="feature-card__title">Bandeja Amor</h3>
+            <p class="feature-card__text">Balão de coração, tirinha de fotos e um café da manhã caprichado.</p>
+            <details class="items items--feature">
+              <summary>O que vem <span class="items__count">(11 itens)</span></summary>
+              <ul><li>Suco natural</li><li>Pão caseiro</li><li>Frios</li><li>Croissant</li><li>Pão de queijo</li><li>Cápsula de cappuccino artesanal</li><li>Mini bolo no acetato</li><li>Brigadeiros</li><li>Balão de coração</li><li>Tirinha de fotos</li><li>Cartãozinho personalizado</li></ul>
+            </details>
+            <a class="btn btn--primary btn--sm" href="https://wa.me/556284585707" data-wa="Olá! Gostaria de encomendar: Bandeja Amor." target="_blank" rel="noopener">Encomendar<span class="sr-only"> bandeja Amor</span></a>
+          </article>
+
+          <article class="feature-card reveal" style="--reveal-delay: 200ms">
+            <div class="feature-card__media">
+              <img src="assets/img/produtos/box-bento-cake.webp" alt="Box com bentô cake, laço rosa e mini buquê de flores desidratadas" width="600" height="800" loading="lazy">
+            </div>
+            <h3 class="feature-card__title">Box com Bentô Cake personalizado</h3>
+            <p class="feature-card__text">Bentô cake personalizado, docinhos e um mini buquê de flores.</p>
+            <details class="items items--feature">
+              <summary>O que vem <span class="items__count">(7 itens)</span></summary>
+              <ul><li>Bentô cake personalizado</li><li>Brigadeiros</li><li>Muffin de banana com canela</li><li>Biscoitinhos amanteigados</li><li>Cápsula de cappuccino artesanal</li><li>Mini buquê de flores desidratadas</li><li>Cartãozinho personalizado</li></ul>
+            </details>
+            <a class="btn btn--primary btn--sm" href="https://wa.me/556284585707" data-wa="Olá! Gostaria de encomendar: Box com Bentô Cake personalizado." target="_blank" rel="noopener">Encomendar<span class="sr-only"> box com Bentô Cake personalizado</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VITRINE / CARDÁPIO ============ -->
+    <section class="section" id="vitrine" aria-labelledby="vitrine-title">
+      <div class="container">
+        <div class="shop-panel">
+          <header class="section-head reveal">
+            <h2 class="section-title" id="vitrine-title">Nosso catálogo</h2>
+            <p class="section-subtitle">Tudo preparado com carinho, sob encomenda</p>
+            <span class="divider" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg></span>
+          </header>
+
+          <!-- Card reutilizável: .product-card (sem preço: valores combinados pelo WhatsApp; itens em <details>) -->
+          <section class="product-group" aria-labelledby="cat-0">
+            <h3 class="product-group__title reveal" id="cat-0">Cestas</h3>
+            <div class="product-grid">
+            <article class="product-card reveal">
+              <div class="product-card__media">
+                <img src="assets/img/produtos/cesta-dengo.webp" alt="Cesta de vime com bentô cake, balão personalizado e foto polaroide" width="600" height="800" loading="lazy">
+              </div>
+              <div class="product-card__body">
+                <h4 class="product-card__title">Cesta Dengo</h4>
+                <details class="items">
+                  <summary>O que vem <span class="items__count">(14 itens)</span></summary>
+                  <ul><li>Bentô cake personalizado</li><li>Pão caseiro</li><li>Frios</li><li>Pão de queijo</li><li>Croissant</li><li>Porção de frutas</li><li>Suco natural</li><li>Cápsula de cappuccino artesanal</li><li>Bolo caseiro</li><li>Biscoitinhos amanteigados</li><li>Brigadeiros</li><li>Cartãozinho personalizado</li><li>Balão personalizado</li><li>Foto polaroide</li></ul>
+                </details>
+                <a class="product-card__cta" href="https://wa.me/556284585707" data-wa="Olá! Gostaria de encomendar: Cesta Dengo." target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Encomendar<span class="sr-only"> cesta Dengo</span>
+                </a>
+              </div>
+            </article>
+            <article class="product-card reveal" style="--reveal-delay: 80ms">
+              <div class="product-card__media">
+                <img src="assets/img/produtos/cesta-felicitacoes.webp" alt="Cesta de vime com buquê de flores, balão personalizado e foto polaroide" width="600" height="800" loading="lazy">
+              </div>
+              <div class="product-card__body">
+                <h4 class="product-card__title">Cesta Felicitações</h4>
+                <details class="items">
+                  <summary>O que vem <span class="items__count">(15 itens)</span></summary>
+                  <ul><li>Pão caseiro</li><li>Frios</li><li>Pão de queijo</li><li>Croissant</li><li>Porção de fruta</li><li>Suco natural</li><li>Cápsula de cappuccino artesanal</li><li>Biscoitinhos amanteigados</li><li>Brigadeiros</li><li>Muffin de banana com canela</li><li>Mini bolo vulcão</li><li>Balão personalizado</li><li>Buquê de flores naturais</li><li>Cartãozinho personalizado</li><li>2 fotos polaroides</li></ul>
+                </details>
+                <a class="product-card__cta" href="https://wa.me/556284585707" data-wa="Olá! Gostaria de encomendar: Cesta Felicitações." target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Encomendar<span class="sr-only"> cesta Felicitações</span>
+                </a>
+              </div>
+            </article>
+            <article class="product-card reveal" style="--reveal-delay: 160ms">
+              <div class="product-card__media">
+                <img src="assets/img/produtos/cesta-premium.webp" alt="Cesta de vime com astromélias, chocolates, frutas e balão personalizado" width="600" height="800" loading="lazy">
+              </div>
+              <div class="product-card__body">
+                <h4 class="product-card__title">Cesta Premium</h4>
+                <details class="items">
+                  <summary>O que vem <span class="items__count">(15 itens)</span></summary>
+                  <ul><li>Queijo</li><li>Suco integral</li><li>Frutas</li><li>Café especial</li><li>Geleia</li><li>Pão tipo italiano</li><li>Chá</li><li>Torradas</li><li>Biscoitinhos amanteigados</li><li>Mix de castanhas</li><li>Chocolate Kopenhagen ou Cacau Show</li><li>Buquê de flores naturais (astromélias)</li><li>Balão personalizado</li><li>Foto estilo polaroide</li><li>Cartãozinho personalizado</li></ul>
+                </details>
+                <a class="product-card__cta" href="https://wa.me/556284585707" data-wa="Olá! Gostaria de encomendar: Cesta Premium." target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Encomendar<span class="sr-only"> cesta Premium</span>
+                </a>
+              </div>
+            </article>
+            </div>
+          </section>
+
+          <section class="product-group" aria-labelledby="cat-1">
+            <h3 class="product-group__title reveal" id="cat-1">Bandejas</h3>
+            <div class="product-grid">
+            <article class="product-card reveal">
+              <div class="product-card__media">
+                <img src="assets/img/produtos/bandeja-amor.webp" alt="Bandeja de café da manhã com balão de coração e tirinha de fotos" width="600" height="800" loading="lazy">
+              </div>
+              <div class="product-card__body">
+                <h4 class="product-card__title">Bandeja Amor</h4>
+                <details class="items">
+                  <summary>O que vem <span class="items__count">(11 itens)</span></summary>
+                  <ul><li>Suco natural</li><li>Pão caseiro</li><li>Frios</li><li>Croissant</li><li>Pão de queijo</li><li>Cápsula de cappuccino artesanal</li><li>Mini bolo no acetato</li><li>Brigadeiros</li><li>Balão de coração</li><li>Tirinha de fotos</li><li>Cartãozinho personalizado</li></ul>
+                </details>
+                <a class="product-card__cta" href="https://wa.me/556284585707" data-wa="Olá! Gostaria de encomendar: Bandeja Amor." target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Encomendar<span class="sr-only"> bandeja Amor</span>
+                </a>
+              </div>
+            </article>
+            <article class="product-card reveal" style="--reveal-delay: 80ms">
+              <div class="product-card__media">
+                <img src="assets/img/produtos/bandeja-querer-bem.webp" alt="Bandeja de café da manhã com balão personalizado e fotos polaroide" width="600" height="800" loading="lazy">
+              </div>
+              <div class="product-card__body">
+                <h4 class="product-card__title">Bandeja Querer Bem</h4>
+                <details class="items">
+                  <summary>O que vem <span class="items__count">(11 itens)</span></summary>
+                  <ul><li>Frios</li><li>Pão caseiro</li><li>Pão de queijo</li><li>Croissant</li><li>Suco natural</li><li>Cápsula de cappuccino</li><li>Biscoitinhos amanteigados</li><li>Brigadeiros</li><li>Bolinho no acetato</li><li>Balão personalizado</li><li>Foto polaroide</li></ul>
+                </details>
+                <a class="product-card__cta" href="https://wa.me/556284585707" data-wa="Olá! Gostaria de encomendar: Bandeja Querer Bem." target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Encomendar<span class="sr-only"> bandeja Querer Bem</span>
+                </a>
+              </div>
+            </article>
+            <article class="product-card reveal" style="--reveal-delay: 160ms">
+              <div class="product-card__media">
+                <img src="assets/img/produtos/bandeja-cerveja-petiscos.webp" alt="Bandeja com cervejas Heineken, bentô cake, petiscos e fotos polaroide" width="600" height="800" loading="lazy">
+              </div>
+              <div class="product-card__body">
+                <h4 class="product-card__title">Bandeja com Cerveja e Petiscos</h4>
+                <details class="items">
+                  <summary>O que vem <span class="items__count">(7 itens)</span></summary>
+                  <ul><li>Cervejas Heineken</li><li>Petiscos</li><li>Bentô cake personalizado</li><li>Brigadeiros</li><li>Fotos polaroide (2 fotos)</li><li>Salame</li><li>Queijo</li></ul>
+                </details>
+                <a class="product-card__cta" href="https://wa.me/556284585707" data-wa="Olá! Gostaria de encomendar: Bandeja com Cerveja e Petiscos." target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Encomendar<span class="sr-only"> bandeja com Cerveja e Petiscos</span>
+                </a>
+              </div>
+            </article>
+            <article class="product-card reveal" style="--reveal-delay: 240ms">
+              <div class="product-card__media">
+                <img src="assets/img/produtos/bandeja-cerveja-especial.webp" alt="Cesta com cerveja especial, copo, chocolates e petiscos" width="600" height="800" loading="lazy">
+              </div>
+              <div class="product-card__body">
+                <h4 class="product-card__title">Bandeja com Cerveja especial</h4>
+                <details class="items">
+                  <summary>O que vem <span class="items__count">(5 itens)</span></summary>
+                  <ul><li>Cerveja especial</li><li>Copo para cerveja</li><li>Chocolates Ferrero Rocher</li><li>Mix de castanhas</li><li>Petiscos</li></ul>
+                </details>
+                <a class="product-card__cta" href="https://wa.me/556284585707" data-wa="Olá! Gostaria de encomendar: Bandeja com Cerveja especial." target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Encomendar<span class="sr-only"> bandeja com Cerveja especial</span>
+                </a>
+              </div>
+            </article>
+            </div>
+          </section>
+
+          <section class="product-group" aria-labelledby="cat-2">
+            <h3 class="product-group__title reveal" id="cat-2">Boxes</h3>
+            <div class="product-grid">
+            <article class="product-card reveal">
+              <div class="product-card__media">
+                <img src="assets/img/produtos/box-individual.webp" alt="Box de café da manhã com croissant, pão de queijo e mini bolo vulcão" width="600" height="800" loading="lazy">
+              </div>
+              <div class="product-card__body">
+                <h4 class="product-card__title">Box individual</h4>
+                <details class="items">
+                  <summary>O que vem <span class="items__count">(9 itens)</span></summary>
+                  <ul><li>Croissant</li><li>Pão de queijo</li><li>Mini bolo vulcão</li><li>Cápsula de cappuccino artesanal</li><li>Muffin de banana com canela</li><li>Porção de frutas</li><li>Biscoitinhos amanteigados</li><li>Cartãozinho personalizado</li><li>Caixa de MDF</li></ul>
+                </details>
+                <a class="product-card__cta" href="https://wa.me/556284585707" data-wa="Olá! Gostaria de encomendar: Box individual." target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Encomendar<span class="sr-only"> box individual</span>
+                </a>
+              </div>
+            </article>
+            <article class="product-card reveal" style="--reveal-delay: 80ms">
+              <div class="product-card__media">
+                <img src="assets/img/produtos/box-bento-cake.webp" alt="Box com bentô cake, laço rosa e mini buquê de flores desidratadas" width="600" height="800" loading="lazy">
+              </div>
+              <div class="product-card__body">
+                <h4 class="product-card__title">Box com Bentô Cake personalizado</h4>
+                <details class="items">
+                  <summary>O que vem <span class="items__count">(7 itens)</span></summary>
+                  <ul><li>Bentô cake personalizado</li><li>Brigadeiros</li><li>Muffin de banana com canela</li><li>Biscoitinhos amanteigados</li><li>Cápsula de cappuccino artesanal</li><li>Mini buquê de flores desidratadas</li><li>Cartãozinho personalizado</li></ul>
+                </details>
+                <a class="product-card__cta" href="https://wa.me/556284585707" data-wa="Olá! Gostaria de encomendar: Box com Bentô Cake personalizado." target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Encomendar<span class="sr-only"> box com Bentô Cake personalizado</span>
+                </a>
+              </div>
+            </article>
+            <article class="product-card reveal" style="--reveal-delay: 160ms">
+              <div class="product-card__media">
+                <img src="assets/img/produtos/box-bento-cake-cerveja.webp" alt="Box com bentô cake, foto polaroide e cerveja Heineken" width="600" height="800" loading="lazy">
+              </div>
+              <div class="product-card__body">
+                <h4 class="product-card__title">Box com bentô cake e cerveja</h4>
+                <details class="items">
+                  <summary>O que vem <span class="items__count">(5 itens)</span></summary>
+                  <ul><li>Bentô cake personalizado</li><li>Brigadeiros</li><li>Foto polaroide</li><li>Cerveja Heineken</li><li>Petiscos</li></ul>
+                </details>
+                <a class="product-card__cta" href="https://wa.me/556284585707" data-wa="Olá! Gostaria de encomendar: Box com bentô cake e cerveja." target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Encomendar<span class="sr-only"> box com bentô cake e cerveja</span>
+                </a>
+              </div>
+            </article>
+            <article class="product-card reveal" style="--reveal-delay: 240ms">
+              <div class="product-card__media">
+                <img src="assets/img/produtos/box-gin-especiarias.webp" alt="Box com duas garrafas de gin tônica, especiarias, castanhas e cartão escrito à mão" width="600" height="800" loading="lazy">
+              </div>
+              <div class="product-card__body">
+                <h4 class="product-card__title">Box com Gin e especiarias</h4>
+                <details class="items">
+                  <summary>O que vem <span class="items__count">(7 itens)</span></summary>
+                  <ul><li>Gin Tanqueray 250ml</li><li>Especiarias</li><li>Petiscos</li><li>Castanhas</li><li>Chocolate Ferrero Rocher</li><li>Cartãozinho personalizado</li><li>Caixa de MDF</li></ul>
+                </details>
+                <a class="product-card__cta" href="https://wa.me/556284585707" data-wa="Olá! Gostaria de encomendar: Box com Gin e especiarias." target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Encomendar<span class="sr-only"> box com gin e especiarias</span>
+                </a>
+              </div>
+            </article>
+            </div>
+          </section>
+
+          <p class="shop-panel__note reveal">
+            Todas as cestas podem ser personalizadas para cada ocasião. Se faltar algum item, ele é substituído por um produto semelhante.
+          </p>
+          <p class="shop-panel__note shop-panel__note--cta reveal">
+            Quer uma cesta do seu jeito?
+            <a href="https://wa.me/556284585707" data-wa="Olá! Gostaria de montar uma cesta personalizada." target="_blank" rel="noopener">Monte uma cesta personalizada com a gente</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DEPOIMENTOS / AVALIAÇÕES ============ -->
+    <section class="section section--tight" id="depoimentos" aria-labelledby="depoimentos-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2 class="section-title" id="depoimentos-title">Entregue com amor, recebido com carinho</h2>
+          <p class="section-subtitle">O que nossos clientes contam pelo WhatsApp:</p>
+        </header>
+
+        <div class="testimonials reveal" data-carousel>
+          <div class="testimonials__track" data-carousel-track tabindex="0" aria-label="Avaliações de clientes (use as setas ou role para ver mais)">
+            <!-- Slide 1: presença no Instagram (atualize o número de seguidores quando mudar) -->
+            <div class="testimonials__slide">
+              <div class="rating">
+                <div class="rating__score">
+                  <p class="rating__value">+4 mil</p>
+                  <p class="rating__count">seguidores no Instagram</p>
+                </div>
+
+                <div class="rating__topics">
+                  <h3 class="rating__topics-title">O que mais encanta</h3>
+                  <ul class="chips">
+                    <li class="chip">Cestas afetivas</li>
+                    <li class="chip">Bolos em buttercream</li>
+                    <li class="chip">Bentô cake</li>
+                    <li class="chip">Datas especiais</li>
+                  </ul>
+                  <a class="btn btn--outline btn--sm" href="https://www.instagram.com/relicariocestas/" target="_blank" rel="noopener">
+                    Ver no Instagram
+                    <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Depoimentos: mensagens de clientes no WhatsApp, recriadas em HTML (texto nítido em qualquer tela).
+                 Para adicionar outro, copie um <figure class="testimonial testimonial--chat"> e troque os balões:
+                 chat__msg--in = cliente (branco), chat__msg--out = Relicário (verde); chat__msg--tail só na 1ª mensagem de cada sequência. -->
+            <figure class="testimonials__slide testimonial testimonial--chat">
+              <div class="testimonial__stars" role="img" aria-label="5 de 5 estrelas"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+              <div class="chat" aria-label="Conversa no WhatsApp">
+                <p class="chat__msg chat__msg--in chat__msg--tail"><span class="sr-only">Cliente: </span>Nunca recebi uma cesta tão linda e tão cheia de amor. Vcs são foda demais!! Vcs de maneira única melhoraram meu dia. Quanta coisa maravilhosa... Não tenho como descrever o conforto que chegou aqui!! Esse será um momento que nunca irei esquecer... Um momento bom num dia tão difícil. Amo muito vcs!<span class="chat__time"><time>18:33</time></span></p>
+              </div>
+              <figcaption class="testimonial__author">Cliente Relicário <span class="testimonial__source">· mensagem no WhatsApp</span></figcaption>
+            </figure>
+            <figure class="testimonials__slide testimonial testimonial--chat">
+              <div class="testimonial__stars" role="img" aria-label="5 de 5 estrelas"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+              <div class="chat" aria-label="Conversa no WhatsApp">
+                <p class="chat__msg chat__msg--in chat__msg--tail"><span class="sr-only">Cliente: </span>Passando para dar um feedback. Ele adorou tudo. Elogiou muito a qualidade do capuccino, do bolo, do croissant, do suco, do donuts, dos patê. Ele já comeu tudo, só faltava o bolo 😅 Ele disse que tudo estava tão fresquinho e gostoso. Gente muito obrigada! A irmã dele e ele já falaram que vão indicar pra todo mundo que conhecem ai na cidade. Pedi para ele fazer uma publicação e marcar vocês. Mais uma vez agradeço imensamente seu atendimento, paciência e por fazer tudo com tanto carinho do jeitinho que eu queria! Muito obrigada de coração por terem deixado tão especial o dia dele! Não tem preço que pague isso! Futuramente vou chamar vocês mais vezes. Ainda mais se for morar ai ❤️😁<span class="chat__time"><time>14:39</time></span></p>
+              </div>
+              <figcaption class="testimonial__author">Cliente Relicário <span class="testimonial__source">· mensagem no WhatsApp</span></figcaption>
+            </figure>
+            <figure class="testimonials__slide testimonial testimonial--chat">
+              <div class="testimonial__stars" role="img" aria-label="5 de 5 estrelas"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+              <div class="chat" aria-label="Conversa no WhatsApp">
+                <p class="chat__msg chat__msg--in chat__msg--tail"><span class="sr-only">Cliente: </span>ela amou<span class="chat__time"><time>10:31</time></span></p>
+                <p class="chat__msg chat__msg--in"><span class="sr-only">Cliente: </span>obrigada por tudo<span class="chat__time"><time>10:31</time></span></p>
+                <p class="chat__msg chat__msg--in"><span class="sr-only">Cliente: </span>vocês são muito atenciosos<span class="chat__time"><time>10:31</time></span></p>
+                <p class="chat__msg chat__msg--in"><span class="sr-only">Cliente: </span>muito sucesso para vocês<span class="chat__time"><time>10:32</time></span></p>
+              </div>
+              <figcaption class="testimonial__author">Cliente Relicário <span class="testimonial__source">· mensagem no WhatsApp</span></figcaption>
+            </figure>
+            <figure class="testimonials__slide testimonial testimonial--chat">
+              <div class="testimonial__stars" role="img" aria-label="5 de 5 estrelas"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+              <div class="chat" aria-label="Conversa no WhatsApp">
+                <p class="chat__msg chat__msg--in chat__msg--tail"><span class="sr-only">Cliente: </span>Agradeço mais uma vez<br>Já me emocionei mto no dia de hoje.<br>Conseguimos cumprir nossa missão de amigas e vcs fizeram parte.<br>Todas amaram e não temos palavras<br><br>Deus abençoe vcs<br>Mto mto obrigada 🙏<span class="chat__time"><time>18:44</time></span></p>
+              </div>
+              <figcaption class="testimonial__author">Cliente Relicário <span class="testimonial__source">· mensagem no WhatsApp</span></figcaption>
+            </figure>
+            <figure class="testimonials__slide testimonial testimonial--chat">
+              <div class="testimonial__stars" role="img" aria-label="5 de 5 estrelas"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+              <div class="chat" aria-label="Conversa no WhatsApp">
+                <p class="chat__msg chat__msg--in chat__msg--tail"><span class="sr-only">Cliente: </span>Que bolo maravilhoso,meu Deus,tá perfeito😍podia ter pedido mais kkkkk<br>De coração,muito obrigado<span class="chat__time"><time>19:55</time></span></p>
+              </div>
+              <figcaption class="testimonial__author">Cliente Relicário <span class="testimonial__source">· mensagem no WhatsApp</span></figcaption>
+            </figure>
+            <figure class="testimonials__slide testimonial testimonial--chat">
+              <div class="testimonial__stars" role="img" aria-label="5 de 5 estrelas"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+              <div class="chat" aria-label="Conversa no WhatsApp">
+                <p class="chat__msg chat__msg--in chat__msg--tail"><span class="sr-only">Cliente: </span>Ahhhhhhhhhhhhh<span class="chat__time"><time>08:40</time></span></p>
+                <p class="chat__msg chat__msg--in"><span class="sr-only">Cliente: </span>Que lindezaaaaaaa<span class="chat__time"><time>08:40</time></span></p>
+                <p class="chat__msg chat__msg--in"><span class="sr-only">Cliente: </span>❤️❤️❤️❤️❤️❤️<span class="chat__time"><time>08:40</time></span></p>
+                <p class="chat__msg chat__msg--in"><span class="sr-only">Cliente: </span>Amei<span class="chat__time"><time>08:40</time></span></p>
+                <p class="chat__msg chat__msg--in"><span class="sr-only">Cliente: </span>Muito obrigada 😊<span class="chat__time"><time>08:40</time></span></p>
+              </div>
+              <figcaption class="testimonial__author">Cliente Relicário <span class="testimonial__source">· mensagem no WhatsApp</span></figcaption>
+            </figure>
+            <figure class="testimonials__slide testimonial testimonial--chat">
+              <div class="testimonial__stars" role="img" aria-label="5 de 5 estrelas"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+              <div class="chat" aria-label="Conversa no WhatsApp">
+                <p class="chat__msg chat__msg--in chat__msg--tail"><span class="sr-only">Cliente: </span>Que lindaaaa! 😍 Gente parabéns!<br>Obrigada por tanto carinho. Atendimento impecável!<span class="chat__time"><time>08:09</time></span></p>
+              </div>
+              <figcaption class="testimonial__author">Cliente Relicário <span class="testimonial__source">· mensagem no WhatsApp</span></figcaption>
+            </figure>
+            <figure class="testimonials__slide testimonial testimonial--chat">
+              <div class="testimonial__stars" role="img" aria-label="5 de 5 estrelas"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+              <div class="chat" aria-label="Conversa no WhatsApp">
+                <p class="chat__msg chat__msg--in chat__msg--tail"><span class="sr-only">Cliente: </span>Amei<span class="chat__time"><time>09:09</time></span></p>
+                <p class="chat__msg chat__msg--in"><span class="sr-only">Cliente: </span>Muito obrigada<span class="chat__time"><time>09:09</time></span></p>
+                <p class="chat__msg chat__msg--out chat__msg--tail"><span class="sr-only">Relicário: </span>❤️❤️❤️❤️❤️<span class="chat__time"><time>09:15</time><svg class="chat__read" viewBox="0 0 16 11" aria-label="lida" role="img"><path fill="currentColor" d="M11.07.65 10.4 0 4.37 6.02 1.64 3.3.97 3.96l3.4 3.4zM15.03.65 14.36 0 8.33 6.02l-.67-.67-.67.66 1.34 1.34z"/></svg></span></p>
+                <p class="chat__msg chat__msg--out"><span class="sr-only">Relicário: </span>Que bom fico muito feliz!<span class="chat__time"><time>09:15</time><svg class="chat__read" viewBox="0 0 16 11" aria-label="lida" role="img"><path fill="currentColor" d="M11.07.65 10.4 0 4.37 6.02 1.64 3.3.97 3.96l3.4 3.4zM15.03.65 14.36 0 8.33 6.02l-.67-.67-.67.66 1.34 1.34z"/></svg></span></p>
+                <p class="chat__msg chat__msg--in chat__msg--tail"><span class="sr-only">Cliente: </span>Sem palavras p descrever o quanto eu amei<span class="chat__time"><time>09:15</time></span></p>
+                <p class="chat__msg chat__msg--in"><span class="sr-only">Cliente: </span>Obrigada 😘😘😘<span class="chat__time"><time>09:15</time></span></p>
+              </div>
+              <figcaption class="testimonial__author">Cliente Relicário <span class="testimonial__source">· mensagem no WhatsApp</span></figcaption>
+            </figure>
+            <figure class="testimonials__slide testimonial testimonial--chat">
+              <div class="testimonial__stars" role="img" aria-label="5 de 5 estrelas"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></div>
+              <div class="chat" aria-label="Conversa no WhatsApp">
+                <p class="chat__msg chat__msg--in chat__msg--tail"><span class="sr-only">Cliente: </span>Estava tudo uma delícia! Obrigada pelo capricho. 😍<span class="chat__time"><time>12:41</time></span></p>
+              </div>
+              <figcaption class="testimonial__author">Cliente Relicário <span class="testimonial__source">· mensagem no WhatsApp</span></figcaption>
+            </figure>
+          </div>
+          <div class="dots" data-carousel-dots role="group" aria-label="Escolher avaliação"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer" id="contato">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="brand brand--footer" href="#inicio">
+          <img class="brand__logo" src="assets/img/logo.webp" alt="" width="64" height="64" loading="lazy">
+          <span class="brand__name">Relicário <em>Cestas</em></span>
+        </a>
+        <p class="site-footer__tagline">Cestas afetivas e bolos em buttercream, feitos com carinho.</p>
+      </div>
+
+      <div class="footer-col site-footer__hours">
+        <h2 class="footer-col__title">Pedidos</h2>
+        <ul class="hours">
+          <li><span>Atendimento</span> <span>Exclusivamente pelo WhatsApp</span></li>
+          <li><span>Encomendas</span> <span>Com antecedência</span></li>
+          <li><span>Instagram</span> <span>@relicariocestas</span></li>
+        </ul>
+        <ul class="social" aria-label="Redes sociais">
+          <li><a class="social__link" href="https://www.instagram.com/relicariocestas/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+          <li><a class="social__link" href="https://wa.me/556284585707" data-wa="Olá! Vim pelo site." target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container site-footer__bottom">
+      <p>© <span data-year>2026</span> Relicário Cestas</p>
+      <p>Feito com <svg class="icon icon--heart" aria-label="carinho" role="img"><use href="#i-heart"/></svg> para presentear</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a class="wa-float" href="https://wa.me/556284585707" data-wa="Olá! Vim pelo site e gostaria de fazer um pedido." target="_blank" rel="noopener" aria-label="Fazer pedido pelo WhatsApp">
+    <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+    <span class="wa-float__label">Pedir agora</span>
+  </a>
+
+  <script src="js/main.js?v=20" defer></script>
+</body>
+</html>
