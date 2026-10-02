@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Relicário Cestas | Cestas afetivas e bolos em buttercream</title>
   <meta name="description" content="Cestas afetivas e bolos em buttercream da Relicário Cestas, em Goiânia. Presenteie quem você ama: pedidos com antecedência pelo WhatsApp.">
-  <meta name="theme-color" content="#F6EFE7" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0F120E" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F6EFE7">
   <link rel="icon" href="favicon.ico" sizes="48x48">
   <link rel="icon" type="image/png" href="assets/img/favicon-32.png" sizes="32x32">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
@@ -17,8 +16,8 @@
       document.documentElement.classList.remove('no-js');
       try {
         var saved = localStorage.getItem('relicario-theme');
-        var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        document.documentElement.dataset.theme = saved || (dark ? 'dark' : 'light');
+        // Tema claro é o padrão; o escuro só vale se o visitante escolheu no botão
+        document.documentElement.dataset.theme = saved === 'dark' ? 'dark' : 'light';
       } catch (e) {}
     })();
   </script>
